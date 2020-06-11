@@ -1,0 +1,7 @@
+<div>
+    <h3>Add Task</h3>
+    <div class="fg">
+        <input type="text" [(ngModel)]="taskName" (keyup.enter)="handleClick($event)" />
+        <button type="button" (click)="handleClick($event)">Add</button>
+    </div>
+</div>

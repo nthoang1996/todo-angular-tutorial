@@ -1,0 +1,9 @@
+<div>
+    <label style="font-weight: bold;">
+      Filter tasks (by name)
+      <div class="fg">
+        <input type="text"[(ngModel)]="term" (input)="notifyTermChanged($event)" (keyup.esc)="clearTearm($event)" />
+        <button type="button" (click)="clearTearm($event)">Clear</button>
+      </div>
+    </label>
+</div>

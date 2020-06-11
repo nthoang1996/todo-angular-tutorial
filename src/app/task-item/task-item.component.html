@@ -1,0 +1,4 @@
+<li [class]="{ done: value.isDone }">
+    {{value.name}}
+    <button *ngIf="!value.isDone" (click)="notifyItemDeleted($event)">Delete</button>
+</li>

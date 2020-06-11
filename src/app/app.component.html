@@ -1,0 +1,5 @@
+<div class="container">
+    <app-search-bar (searchTermChanged)="filterTasks($event)"></app-search-bar>
+    <app-task [list]="shownTasks" (itemDeleted)="setTaskDone($event)"></app-task>
+    <app-new-task (taskAdded)="addTask($event)"></app-new-task>
+</div>
